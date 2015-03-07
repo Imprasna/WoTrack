@@ -20,6 +20,8 @@ the highest PMI (Pointwise Mutual Information).
 
 5. The Levenshtein Distance determination/minimization step is done recursively until the input text is fully consumed.
 
+6. If there were no good trigram phrase matches, then the remaining trigram collocations are decomposed into digrams and unigrams. The same logic is ran on each, respectively.
+
 *Note* Order is currently not maintained in the demo frontend page.
 
 ## Setup

@@ -68,7 +68,14 @@ to install the applications setup the environment and to install dependencies:
 ![alt tag](https://github.com/husman/WoTrack/blob/master/doc/images/tests.2.png)
 
 ## Snapshots and Demostrations
+Tracks with good match:
 ![alt tag](https://github.com/husman/WoTrack/blob/master/doc/images/demo.1.png)
+
+Tracks with good match (Rewrite):
 ![alt tag](https://github.com/husman/WoTrack/blob/master/doc/images/demo.2.png)
+
+Tracks with ok match (Rewrite)
 ![alt tag](https://github.com/husman/WoTrack/blob/master/doc/images/demo.3.png)
+
+Tracks with not so great matching (Rewrite)
 ![alt tag](https://github.com/husman/WoTrack/blob/master/doc/images/demo.4.png)

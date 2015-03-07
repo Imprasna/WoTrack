@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Bookmarks</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/static/page.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#submit_btn').click(function () {
+                var text = $.trim($('#id_lyrics').val());
+                if (text) {
+                    $.post('/', $('#lyrics-form').serialize(), function(data) {
+                        if(data && data.tracks) {
+                            var tracks = data.tracks;
+
+                            $('#track_list').empty();
+                            $.each(tracks, function (index, track) {
+                                console.log(index, 'track---->', track);
+                                $('#track_list').append(
+                                    '<tr>' +
+                                    '<td><img height="64" src="' + track.image.url + '" /></td>' +
+                                    '<td>' + track.name + '</td>' +
+                                    '<td>' + track.artist + '</td>' +
+                                    '<td><a href="'+ track.url + '" target="_blank">' + track.url + '</a></td>' +
+                                    '<tr>'
+                                )
+                            });
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+    <br />
+    <form method="post" action="/" id="lyrics-form">
+        {% for field in form.visible_fields %}
+            <span class="field-title">{{ field.label }}</span><br/>
+            {{ field }}<br/>
+            {% if field.errors %}
+                <div class="error">{{ field.errors.as_text }}</div>
+            {% endif %}
+        {% endfor %}
+        <input type="button" id="submit_btn" value="Submit" class="btn btn-danger right"/>
+        <div class="clear"></div>
+        {% csrf_token %}
+    </form><br />
+
+    <h3>Tracks:</h3>
+    <table class="table table-hover tracks">
+        <thead>
+            <tr>
+                <td></td>
+                <td>Name</td>
+                <td>Artist</td>
+                <td>Url</td>
+            </tr>
+        </thead>
+        <tbody id="track_list">
+            {% for track in tracks %}
+                <tr>
+                    <td><img src="https://i.scdn.co/image/6a0ad4cdc0d4d63bab4b3cb7084ca519625c4ed4" /></td>
+                    <td>{{ track.name }}</td>
+                    <td>{{ track.artist }}</td>
+                    <td>{{ track.url }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

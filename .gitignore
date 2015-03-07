@@ -1,0 +1,6 @@
+.idea/
+.DS_Store
+
+# Project temp resources
+db.sqlite3
+*.egg-info

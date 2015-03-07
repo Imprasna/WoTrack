@@ -1,0 +1,39 @@
+body {
+    font-family: Arial;
+    font-size: 14px;
+}
+.left {
+    float: left;
+    margin: 0px 10px;
+}
+.right {
+    float: right;
+}
+.clear {
+    clear: both;
+}
+.error {
+    background-color: #990000;
+    padding: 8px;
+    color: #ffffff;
+    margin-bottom: 3px;
+}
+.field-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+textarea {
+    font-size: 15px;
+    font-family: Arial;
+    padding: 5px;
+    width: 100%;
+}
+table.tracks {
+    width: 100%;
+}
+table.tracks thead {
+    font-weight: bold;
+}
+table.tracks tbody td {
+    padding-bottom: 10px;
+}

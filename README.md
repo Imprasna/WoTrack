@@ -1,8 +1,5 @@
 # WoTrack: Spotify Words to Track (Poetic rewrite on non-matching)
 
-## Live URL
-<http://heroku.url.coming.soon:8000>
-
 ## Description
 A simple text to track generator. This application will process user input and find tracks that resemble the text pattern.
 If some words or phrases are not found, then the application will generate the best poetic rewrite it can.
@@ -24,12 +21,6 @@ the highest PMI (Pointwise Mutual Information).
 5. The Levenshtein Distance determination/minimization step is done recursively until the input text is fully consumed.
 
 *Note* Order is currently not maintained in the demo frontend page.
-
-## Demo
-The application is pretty easy to run if you have a Python 2.7x installed on your machine. Follow the Setup steps
-to install and run the application. A hosted frontend demo of this application lives could be found at the URL:
-
-<http://heroku.url.coming.soon:8000>
 
 ## Setup
 This is a self contained Python/Django application. Perform the following steps

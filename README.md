@@ -62,13 +62,13 @@ to install the applications setup the environment and to install dependencies:
 10. Finally, run your browser and go to the url: <http://localhost:8000>
 
 ## Running all tests
-https://www.dropbox.com/s/55cv37hwcafs2yk/Screenshot%202015-03-07%2010.59.58.png?dl=0
+![alt tag](https://github.com/husman/WoTrack/blob/master/doc/images/tests.1.png)
 
 ## Running text to track processing without caching and with caching
-![alt tag](https://www.dropbox.com/s/3akdruuahpivz4d/Screenshot%202015-03-07%2010.47.29.png?dl=0)
+![alt tag](https://github.com/husman/WoTrack/blob/master/doc/images/tests.2.png)
 
 ## Snapshots and Demostrations
-![alt tag](https://www.dropbox.com/s/sna0r85q9mkdbyo/Screenshot%202015-03-07%2010.37.54.png?dl=0)
-![alt tag](https://www.dropbox.com/s/hhppmx0n6gm03hy/Screenshot%202015-03-07%2010.28.14.png?dl=0)
-![alt tag](https://www.dropbox.com/s/t8qbq8627hfdy72/Screenshot%202015-03-07%2010.36.12.png?dl=0)
-![alt tag](https://www.dropbox.com/s/oif9fdw6jq6xczw/Screenshot%202015-03-07%2010.41.04.png?dl=0)
+![alt tag](https://github.com/husman/WoTrack/blob/master/doc/images/demo.1.png)
+![alt tag](https://github.com/husman/WoTrack/blob/master/doc/images/demo.2.png)
+![alt tag](https://github.com/husman/WoTrack/blob/master/doc/images/demo.3.png)
+![alt tag](https://github.com/husman/WoTrack/blob/master/doc/images/demo.4.png)

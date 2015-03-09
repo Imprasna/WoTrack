@@ -11,6 +11,6 @@ class TestLyricsTrack(IntegrationTestCase):
         )
 
         assert_that(lyrics_track.get_tracks(), empty())
-        lyrics_track.process(degree=3)
+        lyrics_track.process(ngram_degree=3)
 
         assert_that(lyrics_track.get_tracks(), not_(empty()))
